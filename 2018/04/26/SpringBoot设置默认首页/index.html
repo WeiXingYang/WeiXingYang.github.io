@@ -76,7 +76,9 @@
 			
 				<li><a href="/" target="_blank">主页</a></li>
 	        
-				<li><a href="/tags/微服务" target="_blank">微服务架构</a></li>
+				<li><a href="/tags/日记本/" target="_blank">日记本</a></li>
+	        
+				<li><a href="/tags/微服务" target="_blank">微服务</a></li>
 	        
 			</ul>
 		</nav>
@@ -84,6 +86,10 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -139,6 +145,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -156,12 +164,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/微服务">微服务架构</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/日记本/">日记本</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/tags/微服务">微服务</a></li>
 		        
 				</ul>
 			</nav>
@@ -525,17 +535,25 @@
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      
+        
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -622,6 +640,104 @@
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://www.baocaige.top" target="_blank" class="search-title" title="一叶浮萍归大海，人生何处不相逢（我徒弟，多多支持）">
+                
+                  <img src="http://www.baocaige.top/favicon.ico">
+                
+                Liu_Cabbage（我徒弟，多多支持）
+              </a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://zhousiwei.gitee.io/ibooks/" target="_blank" class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析">
+                
+                  <img src="https://zhousiwei.gitee.io/ibooks/favicon.ico">
+                
+                技术笔记
+              </a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://github.com/JoeyBling" target="_blank" class="search-title" >
+                
+                  <i class="icon-link icon"></i>
+                
+                GitHub
+              </a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://gitee.com/zhousiwei" target="_blank" class="search-title" >
+                
+                  <i class="icon-link icon"></i>
+                
+                码云
+              </a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://www.jianshu.com/u/02cbf31a043a" target="_blank" class="search-title" >
+                
+                  <i class="icon-link icon"></i>
+                
+                简书
+              </a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://blog.csdn.net/qq_30930805" target="_blank" class="search-title" >
+                
+                  <i class="icon-link icon"></i>
+                
+                CSDN
+              </a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://www.zhihu.com/people/joeybling" target="_blank" class="search-title" >
+                
+                  <i class="icon-link icon"></i>
+                
+                知乎
+              </a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://weibo.com/jayinfo" target="_blank" class="search-title" >
+                
+                  <i class="icon-link icon"></i>
+                
+                微博
+              </a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://www.yanshisan.cn" target="_blank" class="search-title" title="燕十三·一个人的江湖">
+                
+                  <img src="https://www.yanshisan.cn/logo.png">
+                
+                燕十三
+              </a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://www.yszh.ml/" target="_blank" class="search-title" title="走自己的路，让别人说去吧。适合自己的才是最好的！">
+                
+                  <img src="https://www.yszh.ml/favicon.ico">
+                
+                悠溯志的技术小站
+              </a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
     
 
     
