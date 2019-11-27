@@ -240,18 +240,18 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h5 id="重要步骤：一定要先停止Mysql"><a href="#重要步骤：一定要先停止Mysql" class="headerlink" title="重要步骤：一定要先停止Mysql"></a>重要步骤：一定要先停止Mysql</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> service mysqld stop</span></span><br></pre></td></tr></table></figure>
+    <h5 id="重要步骤：一定要先停止Mysql"><a href="#重要步骤：一定要先停止Mysql" class="headerlink" title="重要步骤：一定要先停止Mysql"></a>重要步骤：一定要先停止Mysql</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> service mysqld stop</span><br></pre></td></tr></table></figure>
 
-<h5 id="1、创建目标文件夹"><a href="#1、创建目标文件夹" class="headerlink" title="1、创建目标文件夹"></a>1、创建目标文件夹</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> mkdir -p /data/mysql</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> chown -R mysql.mysql /data/mysql/</span></span><br></pre></td></tr></table></figure>
+<h5 id="1、创建目标文件夹"><a href="#1、创建目标文件夹" class="headerlink" title="1、创建目标文件夹"></a>1、创建目标文件夹</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> mkdir -p /data/mysql</span><br><span class="line"><span class="meta">#</span> chown -R mysql.mysql /data/mysql/</span><br></pre></td></tr></table></figure>
 
-<h5 id="2、迁移命令"><a href="#2、迁移命令" class="headerlink" title="2、迁移命令"></a>2、迁移命令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> mysql_install_db --user=mysql --basedir=/usr --datadir=/data/mysql</span></span><br></pre></td></tr></table></figure>
+<h5 id="2、迁移命令"><a href="#2、迁移命令" class="headerlink" title="2、迁移命令"></a>2、迁移命令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> mysql_install_db --user=mysql --basedir=/usr --datadir=/data/mysql</span><br></pre></td></tr></table></figure>
 
 <a id="more"></a>
-<h5 id="3、为避免麻烦，删掉原文件夹-var-lib-mysql"><a href="#3、为避免麻烦，删掉原文件夹-var-lib-mysql" class="headerlink" title="3、为避免麻烦，删掉原文件夹/var/lib/mysql"></a>3、为避免麻烦，删掉原文件夹/var/lib/mysql</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> rm -rf /var/lib/mysql/*</span></span><br></pre></td></tr></table></figure>
+<h5 id="3、为避免麻烦，删掉原文件夹-var-lib-mysql"><a href="#3、为避免麻烦，删掉原文件夹-var-lib-mysql" class="headerlink" title="3、为避免麻烦，删掉原文件夹/var/lib/mysql"></a>3、为避免麻烦，删掉原文件夹/var/lib/mysql</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> rm -rf /var/lib/mysql/*</span><br></pre></td></tr></table></figure>
 
 <h5 id="4、修改-etc-my-cnf配置文件"><a href="#4、修改-etc-my-cnf配置文件" class="headerlink" title="4、修改/etc/my.cnf配置文件"></a>4、修改/etc/my.cnf配置文件</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line">datadir=/data/mysql</span><br></pre></td></tr></table></figure>
 
-<h5 id="5、启动mysql"><a href="#5、启动mysql" class="headerlink" title="5、启动mysql"></a>5、启动mysql</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> chkconfig mysqld on</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> service mysqld restart</span></span><br></pre></td></tr></table></figure>
+<h5 id="5、启动mysql"><a href="#5、启动mysql" class="headerlink" title="5、启动mysql"></a>5、启动mysql</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> chkconfig mysqld on</span><br><span class="line"><span class="meta">#</span> service mysqld restart</span><br></pre></td></tr></table></figure>
     
 
     
@@ -587,10 +587,6 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
              
@@ -599,11 +595,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">微服务</a>
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+                <a href="javascript:void(0)" class="js-tag color4">微服务</a>
               </li>
             
             <div class="clearfix"></div>
