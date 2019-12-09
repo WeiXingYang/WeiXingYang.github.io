@@ -6,22 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://weixingyang.github.io">
-  <title>微服务（一） | 卫星君-遇见智我</title>
+  <title>微服务（二）| 技术栈 | 卫星君-遇见智我</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="微服务概念">
+  <meta name="description" content="微服务技术栈">
 <meta name="keywords" content="微服务">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微服务（一）">
-<meta property="og:url" content="https://weixingyang.github.io/2019/11/27/微服务（一）/index.html">
+<meta property="og:title" content="微服务（二）| 技术栈">
+<meta property="og:url" content="https://weixingyang.github.io/2019/12/09/微服务 之 技术栈/index.html">
 <meta property="og:site_name" content="卫星君-遇见智我">
-<meta property="og:description" content="微服务概念">
+<meta property="og:description" content="微服务技术栈">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-09T12:58:49.227Z">
+<meta property="og:updated_time" content="2019-12-09T13:07:47.381Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="微服务（一）">
-<meta name="twitter:description" content="微服务概念">
+<meta name="twitter:title" content="微服务（二）| 技术栈">
+<meta name="twitter:description" content="微服务技术栈">
   
     <link rel="alternative" href="/atom.xml" title="卫星君-遇见智我" type="application/atom+xml">
   
@@ -183,14 +183,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-微服务（一）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-微服务 之 技术栈" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      微服务（一）
+      微服务（二）| 技术栈
     </h1>
   
 
@@ -202,8 +202,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2019/11/27/微服务（一）/" class="archive-article-date">
-        <time datetime="2019-11-27T14:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-27</time>
+<a href="/2019/12/09/微服务 之 技术栈/" class="archive-article-date">
+        <time datetime="2019-12-09T13:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-09</time>
 </a>
 
   
@@ -216,7 +216,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">2.5k字</span>
+      <span class="post-count">2.2k字</span>
     </span>
   </span>
 
@@ -236,104 +236,275 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h5 id="微服务起源"><a href="#微服务起源" class="headerlink" title="微服务起源"></a>微服务起源</h5><blockquote>
-<p>微服务是由 Peter Rodgers 博士于 2005 年度云计算博览会提出的微 Web 服务 (Micro-Web-Service) 开始，Juval Löwy 则是与他有类似的前导想法，将类别变成细粒服务 (granular services)，以作为 Microsoft 下一阶段的软件架构，其核心想法是让服务是由类似 Unix 管道的访问方式使用，而且复杂的服务背后是使用简单 URI 来开放接口，任何服务，任何细粒都能被开放 (exposed)。这个设计在 HP 的实验室被实现，具有改变复杂软件系统的强大力量。</p>
-<p>2014年，<a href="https://martinfowler.com/" target="_blank" rel="noopener">Martin Fowler</a> 与 <a href="https://bovon.org/" target="_blank" rel="noopener">James Lewis</a> 共同提出了微服务的概念，定义了微服务是由以单一应用程序构成的小服务，自己拥有自己的行程与轻量化处理，服务依业务功能设计，以全自动的方式部署，与其他服务使用 HTTP API 通信。同时服务会使用最小的规模的集中管理 (例如 Docker) 能力，服务可以用不同的编程语言与数据库等组件实现[1]。</p>
+    <h3 id="1-微服务开发"><a href="#1-微服务开发" class="headerlink" title="1.微服务开发"></a>1.微服务开发</h3><blockquote>
+<p>作用: 快速构建开发服务.</p>
 </blockquote>
 <a id="more"></a>
-<h5 id="什么是微服务？"><a href="#什么是微服务？" class="headerlink" title="什么是微服务？"></a>什么是微服务？</h5><blockquote>
-<p><em>The term “<a href="https://martinfowler.com/articles/microservices.html#MicroservicesAndSoa" target="_blank" rel="noopener">Microservice Architecture</a>“ has sprung up over the last few years to describe a particular way of designing software applications as suites of independently deployable services. While there is no precise definition of this architectural style, there are certain common characteristics around organization around business capability, automated deployment, intelligence in the endpoints, and decentralized control of languages and data.</em></p>
-<p><em>“微服务体系结构”这个术语在过去几年中迅速出现，用来描述一种特殊的方法，将软件应用程序设计为可独立部署的服务套件。 虽然这种架构风格没有精确的定义，但是围绕着业务能力、自动部署、端点智能以及语言和数据的分散控制，围绕着组织有一些共同的特征。</em></p>
-<p>​                                                                                                                         <a href="https://martinfowler.com/" target="_blank" rel="noopener">– Martin Fowler Microservice</a> </p>
+<h5 id="Spring："><a href="#Spring：" class="headerlink" title="Spring："></a>Spring：</h5><ul>
+<li><a href="https://spring.io/" target="_blank" rel="noopener">官网</a><h5 id="SpringMvc"><a href="#SpringMvc" class="headerlink" title="SpringMvc"></a>SpringMvc</h5><h5 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h5></li>
+<li><a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener">官网</a><blockquote>
+<p>Spring 是目前 JavaWeb 开发人员必不可少的一个框架, SpringBoot 简化了 Spring 开发的配置目前也是业内主流开发框架.</p>
 </blockquote>
-<blockquote>
-<p>微服务 (Microservices) 是一种<a href="https://zh.wikipedia.org/wiki/软件架构" target="_blank" rel="noopener">软件架构风格</a>，它是以专注于单一责任与功能的小型功能区块 (Small Building Blocks) 为基础，利用模块化的方式组合出复杂的大型应用程序，各功能区块使用与语言无关 (Language-Independent/Language agnostic) 的 API 集相互通信。                         </p>
-<p>​                                                                                                                         <a href="https://zh.wikipedia.org/wiki/微服務" target="_blank" rel="noopener">– 维基百科（中文）</a></p>
-</blockquote>
-<blockquote>
-<p>Microservices are a software development technique —a variant of the service-oriented architecture (SOA) structural style— that arranges an application as a collection of loosely coupled services.[1] In a microservices architecture, services are fine-grained and the protocols are lightweight. </p>
-<p>微服务是一种软件开发技术—- 是面向服务的体系结构结构风格的变体—- 将应用程序排列成松散耦合服务的集合。 在微服务体系结构中，服务是细粒度的，协议是轻量级的。                                   </p>
-<p>​                                                                                                                          <a href="https://en.wikipedia.org/wiki/Microservices" target="_blank" rel="noopener">– 维基百科</a></p>
-</blockquote>
-<blockquote>
-<p>简而言之，微服务体系结构风格[1]是一种将单个应用程序开发成一套小型服务的方法，每个应用程序都在自己的进程中运行，并与轻量级机制(通常是 HTTP 资源 API)通信。 这些服务是围绕业务能力构建的，可以通过完全自动化的部署机制独立部署。 这些服务只有最低限度的集中管理，可以用不同的编程语言编写，并使用不同的数据存储技术。</p>
-</blockquote>
-<h5 id="微服务体系结构的特点-Characteristics-of-a-Microservice-Architecture"><a href="#微服务体系结构的特点-Characteristics-of-a-Microservice-Architecture" class="headerlink" title="微服务体系结构的特点 Characteristics of a Microservice Architecture "></a>微服务体系结构的特点 <a href="https://martinfowler.com/articles/microservices.html#CharacteristicsOfAMicroserviceArchitecture" target="_blank" rel="noopener">Characteristics of a Microservice Architecture </a></h5><ul>
-<li>通过服务实现组件化 <a href="https://martinfowler.com/articles/microservices.html#ComponentizationViaServices" target="_blank" rel="noopener">Componentization via Services </a></li>
-<li>围绕业务能力组织 <a href="https://martinfowler.com/articles/microservices.html#OrganizedAroundBusinessCapabilities" target="_blank" rel="noopener">Organized around Business Capabilities </a></li>
-<li>产品而非项目 <a href="https://martinfowler.com/articles/microservices.html#ProductsNotProjects" target="_blank" rel="noopener">Products not Projects </a></li>
-<li>智能端点和哑管道 <a href="https://martinfowler.com/articles/microservices.html#SmartEndpointsAndDumbPipes" target="_blank" rel="noopener">Smart endpoints and dumb pipes </a></li>
-<li>分权治理 <a href="https://martinfowler.com/articles/microservices.html#DecentralizedGovernance" target="_blank" rel="noopener">Decentralized Governance </a></li>
-<li>分散式数据管理 <a href="https://martinfowler.com/articles/microservices.html#DecentralizedDataManagement" target="_blank" rel="noopener">Decentralized Data Management </a></li>
-<li>基础设施自动化 <a href="https://martinfowler.com/articles/microservices.html#InfrastructureAutomation" target="_blank" rel="noopener">Infrastructure Automation </a></li>
-<li>为失败而设计 <a href="https://martinfowler.com/articles/microservices.html#DesignForFailure" target="_blank" rel="noopener">Design for failure </a></li>
-<li>进化设计 <a href="https://martinfowler.com/articles/microservices.html#EvolutionaryDesign" target="_blank" rel="noopener">Evolutionary Design </a></li>
+</li>
 </ul>
-<h5 id="微服务的优点"><a href="#微服务的优点" class="headerlink" title="微服务的优点"></a>微服务的优点</h5><p>第一，<strong>它解决了复杂问题</strong>。它把可能会变得庞大的单体应用程序分解成一套服务。虽然功能数量不变，但是应用程序已经被分解成可管理的块或者服务。每个服务都有一个明确定义边界的方式，如远程过程调用（RPC）驱动或消息驱动 API。微服务架构模式强制一定程度的模块化，实际上，使用单体代码来实现是极其困难的。因此，使用微服务架构模式，个体服务能被更快地开发，并更容易理解与维护。</p>
-<p>第二，这种架构使得<strong>每个服务都可以由一个团队独立专注开发</strong>。开发者可以<strong>自由选择任何符合服务 API 契约的技术</strong>。当然，更多的组织是希望通过技术选型限制来避免完全混乱的状态。然而，这种自由意味着开发人员不再有可能在这种自由的新项目开始时使用过时的技术。当编写一个新服务时，他们可以选择当前的技术。此外，由于服务较小，使用当前技术重写旧服务将变得更加可行。</p>
-<p>第三，微服务架构模式可以<strong>实现每个微服务独立部署</strong>。开发人员根本不需要去协调部署本地变更到服务。这些变更一经测试即可立即部署。比如，UI 团队可以执行 A|B 测试，并快速迭代 UI 变更。微服务架构模式使得持续部署成为可能。</p>
-<p>最后，微服务架构模式使得<strong>每个服务能够独立扩展</strong>。您可以仅部署满足每个服务的容量和可用性约束的实例数目。此外，您可以使用与服务资源要求最匹配的硬件。例如，您可以在 ECS Compute Optimized 实例上部署一个 CPU 密集型图像处理服务，并且在 ECS Memory-optimized 实例上部署一个内存数据库服务。</p>
-<h5 id="微服务的缺点"><a href="#微服务的缺点" class="headerlink" title="微服务的缺点"></a>微服务的缺点</h5><p>第一，微服务是<strong>一个分布式系统，其使得整体变得复杂</strong>。开发者需要选择和实现基于消息或者 RPC 的进程间通信机制。此外，由于目标请求可能很慢或者不可用，他们必须要编写代码来处理局部故障。虽然这些并不是很复杂、高深，但模块间通过语言级方法/过程调用相互调用，这比单体应用要复杂得多。</p>
-<p>第二，<strong>分区数据库架构</strong>。在基于微服务的应用程序中，您需要更新不同服务所用的数据库。通常不会选择分布式事务，不仅仅是因为 <strong>CAP 定理</strong>。他们根本不支持如今高度可扩展的 NoSQL 数据库和消息代理。您最后不得不使用基于最终一致性的方法，这对于开发人员来说更具挑战性。</p>
-<p>第三，微服务<strong>测试应用程序也很复杂</strong>。对于微服务来说需要启动该服务及其所依赖的所有服务，或者至少为这些服务配置存根。</p>
-<p>第四，<strong>实现了跨越多服务变更</strong>。例如，我们假设您正在实现一个变更服务 A、服务 B 和 服务 C 的需求，其中 A 依赖于 B，且 B 依赖于 C。在单体应用程序中，您可以简单地修改相应的模块、整合变更并一次性部署他们。相反，在微服务中您需要仔细规划和协调出现的变更至每个服务。例如，您需要更新服务 C，然后更新服务 B，最后更新服务 A。幸运的是，大多数变更只会影响一个服务，需要协调的多服务变更相对较少。</p>
-<p>第五，基于<strong>微服务应用程序的部署也是相当复杂</strong>。微服务应用程序通常由大量的服务组成。要成功部署微服务应用程序，<strong>需要求开发人员能高度控制部署方式和高度自动化</strong>。</p>
-<h5 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h5><p>微服务是将单一的应用程序拆分成多个微小的服务，各个小服务之间<strong>松耦合、高内聚</strong>，<strong>每个小服务可以单独进行开发，不依赖于具体的编程语言</strong>，也可以使用<strong>不同的数据存储技术</strong>，各个服务可以<strong>独立部署</strong>，拥有各自的进程，相互之间<strong>通过轻量化的机制进行通信</strong>（如基于http的API接口），所有的服务<strong>共同实现具体的业务功能</strong>。</p>
-<p><strong>微服务架构是一种思想，而真正开发时是采用分布式系统开发。</strong></p>
-<p><strong>微服务的目标在于充分分解应用程序以方便应用敏捷开发和部署。</strong></p>
-<p><strong>微服务的实现思路是将应用程序分解成一套较小的互联服务。</strong></p>
-<p>微服务通常要实现三大指标：</p>
+<h3 id="2-微服务注册发现"><a href="#2-微服务注册发现" class="headerlink" title="2.微服务注册发现"></a>2.微服务注册发现</h3><blockquote>
+<p>作用: 发现服务,注册服务,集中管理服务.</p>
+</blockquote>
+<h5 id="Zookeeper"><a href="#Zookeeper" class="headerlink" title="Zookeeper"></a>Zookeeper</h5><blockquote>
+<p>ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services.<br>zookeeper是一个集中的服务,用于维护配置信息、命名、提供分布式同步和提供组服务.</p>
+</blockquote>
 <ul>
-<li><strong>高可用</strong></li>
-<li><strong>高性能</strong></li>
-<li><strong>高并发</strong></li>
+<li><a href="https://github.com/apache/zookeeper" target="_blank" rel="noopener">GitHub</a></li>
 </ul>
-<p>微服务通常面临的问题：</p>
+<h5 id="Eureka"><a href="#Eureka" class="headerlink" title="Eureka"></a>Eureka</h5><ul>
+<li>Eureka Server : 提供服务注册服务,各个节点启动后,会在Eureka Server中进行注册.</li>
+<li>Eureka Client : 简化与Eureka Server的交互操作.</li>
+<li>Spring Cloud Netflix : GitHub，文档.</li>
+</ul>
+<h5 id="Nacos"><a href="#Nacos" class="headerlink" title="Nacos"></a>Nacos</h5><blockquote>
+<p>Nacos 致力于帮助您发现、配置和管理微服务。Nacos 提供了一组简单易用的特性集，帮助您快速实现动态服务发现、服务配置、服务元数据及流量管理。<br>Nacos 帮助您更敏捷和容易地构建、交付和管理微服务平台。 Nacos 是构建以“服务”为中心的现代应用架构 (例如微服务范式、云原生范式) 的服务基础设施。</p>
 <ul>
-<li>客户端如何访问<ul>
-<li>API Gateway 、 WebUI</li>
+<li><a href="https://nacos.io/zh-cn/" target="_blank" rel="noopener">官网</a></li>
+<li><a href="https://github.com/alibaba/nacos" target="_blank" rel="noopener">GitHub</a></li>
 </ul>
-</li>
-<li>服务与服务之间如何通信（对内RPC，对外RESTFUL）<ul>
-<li>同步：<ul>
-<li>HTTP：跨防火墙</li>
-<li>RPC：传输效率高</li>
-</ul>
-</li>
-<li>异步<ul>
-<li>消息队列</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>服务如何治理<ul>
-<li>注册中心</li>
-<li>监控中心</li>
-</ul>
-</li>
-<li>服务挂了怎么办<ul>
-<li>重试机制</li>
-<li>限流</li>
-<li>熔断机制</li>
-<li>负载均衡</li>
-<li>降级</li>
-<li>本地缓存</li>
-</ul>
-</li>
-</ul>
-<p>构建复杂的微服务应用程序本质上是困难的。单体架构模式只适用于简单、轻量级的应用程序，如果您使用它来构建复杂应用，您最终会陷入痛苦的境地。微服务架构模式是复杂、持续发展应用的一个更好的选择。尽管它存在着缺点和实现挑战。</p>
-<h5 id="参考书籍"><a href="#参考书籍" class="headerlink" title="参考书籍"></a>参考书籍</h5><blockquote>
-<p>《Microservices Patterns》</p>
 </blockquote>
-<h5 id="文献参考"><a href="#文献参考" class="headerlink" title="文献参考"></a>文献参考</h5><blockquote>
-<p>Microservices：<a href="https://martinfowler.com/articles/microservices.html#MicroservicesAndSoa" target="_blank" rel="noopener">https://martinfowler.com/articles/microservices.html#MicroservicesAndSoa</a></p>
-<p>Martin Fowler：<a href="https://martinfowler.com/" target="_blank" rel="noopener">https://martinfowler.com/</a></p>
-<p>James Lewis：<a href="https://bovon.org/" target="_blank" rel="noopener">https://bovon.org/</a></p>
-<p>维基百科（中文）：<a href="https://zh.wikipedia.org/wiki/微服務" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/微服務</a></p>
-<p>维基百科：<a href="https://en.wikipedia.org/wiki/Microservices" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Microservices</a></p>
+<blockquote>
+<p>Zookeeper保证CP , Eureka 保证AP。<br>APC定理，C-数据一致性;A-服务可用性;P-服务对网络分区故障的容错性,这三个特性在任何分布式系统中不能同时满足,最多同时满足两个.</p>
 </blockquote>
-<h5 id="ChangeLog"><a href="#ChangeLog" class="headerlink" title="ChangeLog"></a>ChangeLog</h5><ul>
-<li>2019-11-27 22:26 初稿</li>
+<h3 id="3-微服务配置管理"><a href="#3-微服务配置管理" class="headerlink" title="3.微服务配置管理"></a>3.微服务配置管理</h3><blockquote>
+<p>作用:统一管理一个或多个服务的配置信息,集中管理.</p>
+</blockquote>
+<h5 id="Disconf"><a href="#Disconf" class="headerlink" title="Disconf"></a>Disconf</h5><blockquote>
+<p>Distributed Configuration Management Platform(分布式配置管理平台) ,它是专注于各种分布式系统配置管理 的通用组件/通用平台, 提供统一的配置管理服务,是一套完整的基于zookeeper的分布式配置统一解决方案.</p>
+<ul>
+<li><a href="https://github.com/knightliao/disconf" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+</blockquote>
+<h5 id="Spring-Cloud-Config"><a href="#Spring-Cloud-Config" class="headerlink" title="Spring Cloud Config"></a>Spring Cloud Config</h5><ul>
+<li><a href="https://github.com/spring-cloud/spring-cloud-config" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+<h5 id="Apollo"><a href="#Apollo" class="headerlink" title="Apollo"></a>Apollo</h5><blockquote>
+<p>Apollo（阿波罗）是携程框架部门研发的分布式配置中心,能够集中化管理应用不同环境、不同集群的配置,配置修改后能够实时推送到应用端,并且具备规范的权限、流程治理等特性,适用于微服务配置管理场景.</p>
+<ul>
+<li><a href="https://github.com/ctripcorp/apollo" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+</blockquote>
+<h5 id="Nacos-1"><a href="#Nacos-1" class="headerlink" title="Nacos"></a>Nacos</h5><blockquote>
+<p>Nacos 致力于帮助您发现、配置和管理微服务。Nacos 提供了一组简单易用的特性集，帮助您快速实现动态服务发现、服务配置、服务元数据及流量管理。<br>Nacos 帮助您更敏捷和容易地构建、交付和管理微服务平台。 Nacos 是构建以“服务”为中心的现代应用架构 (例如微服务范式、云原生范式) 的服务基础设施。</p>
+<ul>
+<li><a href="https://nacos.io/zh-cn/" target="_blank" rel="noopener">官网</a></li>
+<li><a href="https://github.com/alibaba/nacos" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+</blockquote>
+<h3 id="4-权限认证"><a href="#4-权限认证" class="headerlink" title="4.权限认证"></a>4.权限认证</h3><blockquote>
+<p>作用:根据系统设置的安全规则或者安全策略,用户可以访问而且只能访问自己被授权的资源,不多不少.</p>
+</blockquote>
+<h5 id="Spring-Security"><a href="#Spring-Security" class="headerlink" title="Spring Security"></a>Spring Security</h5><blockquote>
+<p>Springsecurity 是一个强大的、高度可定制的身份验证和访问控制框架。 它是确保基于 spring 的应用程序安全的事实标准。主要致力于为 Java 应用程序提供身份验证和授权。</p>
+<ul>
+<li><a href="https://spring.io/projects/spring-security" target="_blank" rel="noopener">官网</a></li>
+</ul>
+</blockquote>
+<h5 id="Apache-Shiro"><a href="#Apache-Shiro" class="headerlink" title="Apache Shiro"></a>Apache Shiro</h5><blockquote>
+<p>Apache Shiro是一个强大且易于使用的Java安全框架，它执行身份验证、授权、加密和会话管理。 有了Shiro易于理解的API，你可以快速而轻松地保护任何应用程序——从最小的移动应用程序到最大的 web 和企业应用程序.</p>
+<ul>
+<li><a href="http://shiro.apache.org/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+</blockquote>
+<h3 id="5-微服务通信协议"><a href="#5-微服务通信协议" class="headerlink" title="5.微服务通信协议"></a>5.微服务通信协议</h3><h5 id="Rest"><a href="#Rest" class="headerlink" title="Rest"></a>Rest</h5><blockquote>
+<p>通过HTTP/HTTPS发送Rest请求进行数据交互</p>
+</blockquote>
+<h5 id="RPC（Remote-Procedure-Call）"><a href="#RPC（Remote-Procedure-Call）" class="headerlink" title="RPC（Remote Procedure Call）"></a>RPC（Remote Procedure Call）</h5><blockquote>
+<p>一种通过网络从远程计算机程序上请求服务,而不需要了解底层网络技术的协议.RPC不依赖于具体的网络传输协议,tcp、udp等都可以.</p>
+</blockquote>
+<h5 id="gRPC"><a href="#gRPC" class="headerlink" title="gRPC"></a>gRPC</h5><blockquote>
+<p>A high-performance, open-source universal RPC framework 所谓RPC(remote procedure call 远程过程调用)框架实际是提供了一套机制,使得应用程序之间可以进行通信,而且也遵从server/client模型.使用的时候客户端调用server端提供的接口就像是调用本地的函数一样.</p>
+<ul>
+<li><a href="https://www.grpc.io/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+</blockquote>
+<h5 id="RMI（Remote-Method-Invocation）"><a href="#RMI（Remote-Method-Invocation）" class="headerlink" title="RMI（Remote Method Invocation）"></a>RMI（Remote Method Invocation）</h5><blockquote>
+<p>纯Java调用</p>
+</blockquote>
+<h3 id="6-服务接口调用"><a href="#6-服务接口调用" class="headerlink" title="6.服务接口调用"></a>6.服务接口调用</h3><blockquote>
+<p>作用: 多个服务之间的通讯</p>
+</blockquote>
+<h5 id="Feign-HTTP"><a href="#Feign-HTTP" class="headerlink" title="Feign(HTTP)"></a>Feign(HTTP)</h5><blockquote>
+<p>Spring Cloud Netflix 的微服务都是以 HTTP 接口的形式暴露的,所以可以用 Apache 的 HttpClient 或 Spring 的 RestTemplate 去调用,而 Feign 是一个使用起来更加方便的 HTTP 客戶端,使用起来就像是调用自身工程的方法,而感觉不到是调用远程方法.</p>
+<ul>
+<li><a href="https://github.com/OpenFeign/feign" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+</blockquote>
+<h3 id="7-服务熔断"><a href="#7-服务熔断" class="headerlink" title="7.服务熔断"></a>7.服务熔断</h3><blockquote>
+<p>作用: 当请求到达一定阈值时不让请求继续.</p>
+</blockquote>
+<h5 id="Hystrix"><a href="#Hystrix" class="headerlink" title="Hystrix"></a>Hystrix</h5><blockquote>
+<p>Hystrix 是一个延迟和容错库，旨在隔离访问远程系统、服务和第三方库的点，阻止级联故障，并使复杂的分布式系统中不可避免的故障恢复能力。</p>
+<ul>
+<li><a href="()https://github.com/Netflix/Hystrix">GitHub</a></li>
+</ul>
+</blockquote>
+<h5 id="Sentinel"><a href="#Sentinel" class="headerlink" title="Sentinel"></a>Sentinel</h5><blockquote>
+<p>Sentinel 以“流”为切入点，在流量控制、断路和系统自适应保护等多个领域开展工作，保证微服务的可靠性。</p>
+<ul>
+<li><a href="https://github.com/alibaba/Sentinel" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+</blockquote>
+<h3 id="8-服务负载均衡"><a href="#8-服务负载均衡" class="headerlink" title="8.服务负载均衡"></a>8.服务负载均衡</h3><blockquote>
+<p>作用:降低服务压力,增加吞吐量</p>
+</blockquote>
+<h5 id="Ribbon"><a href="#Ribbon" class="headerlink" title="Ribbon"></a>Ribbon</h5><blockquote>
+<p>Ribbon 是一个基于HTTP和TCP的客户端负载均衡工具,它基于Netflix Ribbon实现.</p>
+<ul>
+<li><a href="https://github.com/Netflix/ribbon" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+</blockquote>
+<h5 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h5><blockquote>
+<p>Nginx (engine x) 是一个高性能的HTTP和反向代理web服务器,同时也提供了IMAP/POP3/SMTP服务</p>
+<ul>
+<li><a href="https://github.com/nginx/nginx" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+</blockquote>
+<h5 id="Nginx-与-Ribbon区别"><a href="#Nginx-与-Ribbon区别" class="headerlink" title="Nginx 与 Ribbon区别:"></a>Nginx 与 Ribbon区别:</h5><blockquote>
+<p>Nginx 属于服务端负载均衡,Ribbon属于客户端负载均衡.<br>Nginx作用与Tomcat,Ribbon作用与各个服务之间的调用(RPC).</p>
+</blockquote>
+<h3 id="9-消息队列"><a href="#9-消息队列" class="headerlink" title="9.消息队列"></a>9.消息队列</h3><blockquote>
+<p>作用: 解耦业务,异步化处理数据.</p>
+</blockquote>
+<h5 id="Kafka"><a href="#Kafka" class="headerlink" title="Kafka"></a>Kafka</h5><ul>
+<li><a href="http://kafka.apache.org/" target="_blank" rel="noopener">官网</a><h5 id="RabbitMQ"><a href="#RabbitMQ" class="headerlink" title="RabbitMQ"></a>RabbitMQ</h5></li>
+<li><a href="https://www.rabbitmq.com/" target="_blank" rel="noopener">官网</a><h5 id="RocketMQ"><a href="#RocketMQ" class="headerlink" title="RocketMQ"></a>RocketMQ</h5></li>
+<li><a href="http://rocketmq.apache.org/" target="_blank" rel="noopener">官网</a><h5 id="ActiveMQ"><a href="#ActiveMQ" class="headerlink" title="ActiveMQ"></a>ActiveMQ</h5></li>
+<li><a href="http://activemq.apache.org/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h3 id="10-日志采集（ELK）"><a href="#10-日志采集（ELK）" class="headerlink" title="10.日志采集（ELK）"></a>10.日志采集（ELK）</h3><blockquote>
+<p>作用:收集各服务日志提供日志分析、用户画像等.</p>
+</blockquote>
+<h5 id="Elasticsearch"><a href="#Elasticsearch" class="headerlink" title="Elasticsearch"></a>Elasticsearch</h5><ul>
+<li><a href="https://github.com/elastic/elasticsearch" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+<h5 id="Logstash"><a href="#Logstash" class="headerlink" title="Logstash"></a>Logstash</h5><ul>
+<li><a href="https://github.com/elastic/logstash" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+<h5 id="Kibana"><a href="#Kibana" class="headerlink" title="Kibana"></a>Kibana</h5><ul>
+<li><a href="https://github.com/elastic/kibana" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+<h3 id="11-微服务网关（API-Gateway）"><a href="#11-微服务网关（API-Gateway）" class="headerlink" title="11.微服务网关（API-Gateway）"></a>11.微服务网关（API-Gateway）</h3><blockquote>
+<p>作用:外部请求通过API网关进行拦截处理,再转发到真正的服务.</p>
+</blockquote>
+<h5 id="Zuul"><a href="#Zuul" class="headerlink" title="Zuul"></a>Zuul</h5><blockquote>
+<p>Zuul 是一个网关服务，它提供动态路由、监视、弹性、安全性等等。</p>
+<ul>
+<li><a href="https://github.com/Netflix/zuul" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+</blockquote>
+<h5 id="Spring-Cloud-Gateway"><a href="#Spring-Cloud-Gateway" class="headerlink" title="Spring Cloud Gateway"></a>Spring Cloud Gateway</h5><blockquote>
+<p>Spring Cloud Gateway 旨在提供一种简单而有效的方法来路由到 api，并为它们提供交叉关注点，如安全性、监视 / 度量和弹性。</p>
+<ul>
+<li><a href="https://spring.io/projects/spring-cloud-gateway" target="_blank" rel="noopener">官网</a></li>
+</ul>
+</blockquote>
+<h3 id="12-服务监控"><a href="#12-服务监控" class="headerlink" title="12.服务监控"></a>12.服务监控</h3><blockquote>
+<p>作用:以可视化或非可视化的形式展示出各个服务的运行情况(CPU、内存、访问量等).</p>
+</blockquote>
+<h5 id="Zabbix"><a href="#Zabbix" class="headerlink" title="Zabbix"></a>Zabbix</h5><ul>
+<li><a href="https://github.com/jjmartres/Zabbix" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+<h5 id="Nagios"><a href="#Nagios" class="headerlink" title="Nagios"></a>Nagios</h5><ul>
+<li><a href="https://www.nagios.org/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h5 id="Metrics"><a href="#Metrics" class="headerlink" title="Metrics"></a>Metrics</h5><ul>
+<li><a href="https://metrics.dropwizard.io/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h3 id="13-服务链路追踪"><a href="#13-服务链路追踪" class="headerlink" title="13.服务链路追踪"></a>13.服务链路追踪</h3><blockquote>
+<p>作用:明确服务之间的调用关系.</p>
+</blockquote>
+<h5 id="Zipkin"><a href="#Zipkin" class="headerlink" title="Zipkin"></a>Zipkin</h5><blockquote>
+<p>ZipKin 是一个开放源代码的分布式跟踪系统，由 Twitter 公司开源，它致力于收集服务的定时数据，以解决微服务架构中的延迟问题，包括数据的收集、存储、查找和展现。</p>
+<ul>
+<li><a href="https://github.com/openzipkin/zipkin" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+</blockquote>
+<h5 id="Brave"><a href="#Brave" class="headerlink" title="Brave"></a>Brave</h5><ul>
+<li><a href="https://github.com/openzipkin/brave" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+<h5 id="Pinpoint"><a href="#Pinpoint" class="headerlink" title="Pinpoint"></a>Pinpoint</h5><blockquote>
+<p>Pinpoint 是一个用 Java / PHP 编写的大规模分布式系统的 APM (应用程序性能管理)工具。 受到 Dapper 的启发，Pinpoint 提供了一个解决方案，通过跟踪跨分布式应用程序的事务，帮助分析系统的整体结构以及其中的组件如何相互连接。</p>
+<ul>
+<li><a href="https://github.com/naver/pinpoint" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+</blockquote>
+<h5 id="Spring-Cloud-Sleuth"><a href="#Spring-Cloud-Sleuth" class="headerlink" title="Spring Cloud Sleuth"></a>Spring Cloud Sleuth</h5><blockquote>
+<p>Spring Cloud Sleuth 为 Spring Cloud 实现了一个分布式跟踪解决方案，大量借鉴了 Dapper、 Zipkin 和 HTrace。 对于大多数用户来说，Sleuth 应该是不可见的，并且您与外部系统的所有交互都应该自动检测。 您可以简单地在日志中捕获数据，或者将数据发送到远程收集器服务。</p>
+<ul>
+<li><a href="https://spring.io/projects/spring-cloud-sleuth" target="_blank" rel="noopener">官网</a></li>
+</ul>
+</blockquote>
+<h5 id="opentracing"><a href="#opentracing" class="headerlink" title="opentracing"></a>opentracing</h5><ul>
+<li><a href="https://opentracing.io/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h3 id="14-数据存储"><a href="#14-数据存储" class="headerlink" title="14.数据存储"></a>14.数据存储</h3><blockquote>
+<p>作用: 存储数据</p>
+</blockquote>
+<h4 id="关系型数据库"><a href="#关系型数据库" class="headerlink" title="关系型数据库"></a>关系型数据库</h4><h5 id="MySql"><a href="#MySql" class="headerlink" title="MySql"></a>MySql</h5><ul>
+<li><a href="https://www.mysql.com/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h5 id="Oracle"><a href="#Oracle" class="headerlink" title="Oracle"></a>Oracle</h5><ul>
+<li><a href="https://www.oracle.com/index.html" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h5 id="MsSql"><a href="#MsSql" class="headerlink" title="MsSql"></a>MsSql</h5><ul>
+<li><a href="https://docs.microsoft.com/zh-cn/sql/?view=sql-server-ver15" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h5 id="PostgreSql"><a href="#PostgreSql" class="headerlink" title="PostgreSql"></a>PostgreSql</h5><ul>
+<li><a href="https://www.postgresql.org/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h4 id="非关系型数据库"><a href="#非关系型数据库" class="headerlink" title="非关系型数据库"></a>非关系型数据库</h4><h5 id="Mongodb"><a href="#Mongodb" class="headerlink" title="Mongodb"></a>Mongodb</h5><ul>
+<li><a href="https://www.mongodb.com/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h5 id="Elasticsearch-1"><a href="#Elasticsearch-1" class="headerlink" title="Elasticsearch"></a>Elasticsearch</h5><ul>
+<li><a href="https://github.com/elastic/elasticsearch" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+<h3 id="15-缓存"><a href="#15-缓存" class="headerlink" title="15.缓存"></a>15.缓存</h3><blockquote>
+<p>作用: 存储数据.</p>
+</blockquote>
+<h5 id="redis"><a href="#redis" class="headerlink" title="redis"></a>redis</h5><ul>
+<li><a href="https://redis.io/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h3 id="16-分库分表"><a href="#16-分库分表" class="headerlink" title="16.分库分表"></a>16.分库分表</h3><blockquote>
+<p>作用: 数据库分库分表方案.</p>
+</blockquote>
+<h5 id="shardingsphere"><a href="#shardingsphere" class="headerlink" title="shardingsphere"></a>shardingsphere</h5><ul>
+<li><a href="http://shardingsphere.apache.org/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h5 id="Mycat"><a href="#Mycat" class="headerlink" title="Mycat"></a>Mycat</h5><ul>
+<li><a href="http://www.mycat.io/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h3 id="服务部署"><a href="#服务部署" class="headerlink" title="服务部署"></a>服务部署</h3><blockquote>
+<p>作用: 将项目快速部署、上线、持续集成.</p>
+</blockquote>
+<h5 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h5><ul>
+<li><a href="https://www.docker.com/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h5 id="Jenkins"><a href="#Jenkins" class="headerlink" title="Jenkins"></a>Jenkins</h5><blockquote>
+<p>Jenkins是一款开源 CI&amp;CD 软件，用于自动化各种任务，包括构建、测试和部署软件。Jenkins 支持各种运行方式，可通过系统包、Docker 或者通过一个独立的 Java 程序。</p>
+<ul>
+<li><a href="https://jenkins.io/zh/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+</blockquote>
+<h5 id="Kubernetes-K8s"><a href="#Kubernetes-K8s" class="headerlink" title="Kubernetes(K8s)"></a>Kubernetes(K8s)</h5><blockquote>
+<p>Kubernetes 是一个用于自动部署、扩展和管理集装箱化应用程序的开放源码系统.</p>
+<ul>
+<li><a href="https://kubernetes.io/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+</blockquote>
+<h5 id="Mesos"><a href="#Mesos" class="headerlink" title="Mesos"></a>Mesos</h5><blockquote>
+<p>一个分布式系统内核，Mesos 使用与 Linux 内核相同的原则构建，只是抽象层次不同。 Mesoskernel 可以在每台机器上运行，并为应用程序(如 Hadoop、 Spark、 Kafka、 Elasticsearch)提供 API，用于跨整个数据中心和云环境的资源管理和调度。</p>
+<ul>
+<li><a href="http://mesos.apache.org/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+</blockquote>
+<h5 id="GitLab"><a href="#GitLab" class="headerlink" title="GitLab"></a>GitLab</h5><h2 id="ChangeLog"><a href="#ChangeLog" class="headerlink" title="ChangeLog"></a>ChangeLog</h2><ul>
+<li>2019-12-09 21:00 初稿</li>
 </ul>
 
     
@@ -381,7 +552,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://weixingyang.github.io/2019/11/27/微服务（一）/" title="微服务（一）" target="_blank">https://weixingyang.github.io/2019/11/27/微服务（一）/</a>
+          <a href="https://weixingyang.github.io/2019/12/09/微服务 之 技术栈/" title="微服务（二）| 技术栈" target="_blank">https://weixingyang.github.io/2019/12/09/微服务 之 技术栈/</a>
         </li>
         <li>
           <strong>版权声明： </strong>
@@ -456,7 +627,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://weixingyang.github.io/2019/11/27/微服务（一）/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://weixingyang.github.io/2019/12/09/微服务 之 技术栈/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -471,18 +642,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2019/12/09/微服务（二）/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          微服务（二）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/07/23/gulp-babel取消严格模式use strict/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">gulp-babel 取消严格模式(&#34;use strict&#34;)</div>
+    <a href="/2019/11/27/微服务 之 概念/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">微服务（一）| 概念</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -523,9 +685,9 @@
     <script src="/lib/gitment.js"></script>
   
   <script>
-    <!-- id: "微服务（一）" -->
+    <!-- id: "微服务（二）| 技术栈" -->
     var gitment = new Gitment({
-      id: "20191127223600",
+      id: "20191209210000",
       owner: 'WeiXingYang',
       repo: 'WeiXingYang.github.io',
       oauth: {
